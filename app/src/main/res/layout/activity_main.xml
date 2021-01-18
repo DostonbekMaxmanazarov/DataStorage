@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E12587"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <Button
+        android:id="@+id/bt_camera"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:background="@drawable/bg_button"
+        android:padding="2dp"
+        android:text="@string/gallery"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintLeft_toRightOf="@id/bt_gallery"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        >
+
+    </Button>
+
+    <Button
+        android:id="@+id/bt_gallery"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/bg_button1"
+        android:padding="2dp"
+        android:text="@string/camera"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/bt_camera"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+
+    </Button>
+
+    <EditText
+        android:id="@+id/edit_fullName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#fff"
+        android:hint="UserName"
+        android:inputType="text"
+        android:textColor="#fff"
+        android:textColorHint="#CACACA"
+        android:textSize="18sp"
+        android:typeface="serif"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@id/gl_3"
+        app:layout_constraintRight_toLeftOf="@id/gl_4"
+        app:layout_constraintTop_toBottomOf="@id/gl_2">
+
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edit_userName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="#fff"
+        android:textColor="#fff"
+        android:textColorHint="#CACACA"
+        android:textSize="18sp"
+        android:typeface="serif"
+        app:layout_constraintLeft_toRightOf="@id/gl_3"
+        app:layout_constraintRight_toLeftOf="@id/gl_4"
+        app:layout_constraintTop_toBottomOf="@id/edit_fullName">
+
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edit_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:inputType="number"
+        android:backgroundTint="#fff"
+        android:textColor="#fff"
+        android:textColorHint="#CACACA"
+        android:textSize="18sp"
+        android:typeface="serif"
+        app:layout_constraintLeft_toRightOf="@id/gl_3"
+        app:layout_constraintRight_toLeftOf="@id/gl_4"
+        app:layout_constraintTop_toBottomOf="@id/edit_userName">
+
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:backgroundTint="#fff"
+        android:textColor="#fff"
+        android:textColorHint="#CACACA"
+        android:textSize="18sp"
+        android:typeface="serif"
+        app:layout_constraintLeft_toRightOf="@id/gl_3"
+        app:layout_constraintRight_toLeftOf="@id/gl_4"
+        app:layout_constraintTop_toBottomOf="@id/edit_date">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/bt_save"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_button2"
+        android:text="@string/save"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+    </Button>
+
+    <Button
+        android:id="@+id/bt_show"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_button3"
+        android:text="@string/show"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        >
+
+    </Button>
+
+    <ImageView
+        android:id="@+id/image_camera"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:background="#fff"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@id/gl_2"
+        app:layout_constraintLeft_toRightOf="@id/gl_3"
+        app:layout_constraintRight_toLeftOf="@id/gl_4"
+        app:layout_constraintTop_toBottomOf="@id/gl_1">
+
+    </ImageView>
+</androidx.constraintlayout.widget.ConstraintLayout>

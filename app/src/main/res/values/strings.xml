@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DataStorage</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="save">Save</string>
+    <string name="show">Show</string>
+</resources>
